@@ -1,28 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dropfist Games</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dropfist Games | Resolve</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, rgba(155, 92, 255, 0.22), transparent 35%),
+        radial-gradient(circle at bottom, rgba(212, 168, 72, 0.16), transparent 35%),
+        #08070b;
+      color: #f5ead0;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    .crest {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 24px;
+      border: 2px solid #d4a848;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 0 35px rgba(212, 168, 72, 0.35);
+      background: radial-gradient(circle, #241733, #0d0a12);
+      font-size: 42px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      margin: 0;
+      letter-spacing: 4px;
+      color: #f7d27a;
+      text-shadow: 0 0 18px rgba(212, 168, 72, 0.4);
+    }
+
+    .tagline {
+      font-size: 1.25rem;
+      color: #cdbfdd;
+      margin: 12px 0 48px;
+    }
+
+    .card {
+      border: 1px solid rgba(212, 168, 72, 0.45);
+      border-radius: 24px;
+      padding: 36px;
+      background: rgba(12, 9, 18, 0.82);
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.55);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin: 0 0 12px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #d9cfbf;
+      max-width: 760px;
+      margin: 0 auto 32px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 32px 0;
+    }
+
+    .button {
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #0b0810;
+      background: linear-gradient(135deg, #f7d27a, #b9822f);
+      box-shadow: 0 0 20px rgba(212, 168, 72, 0.25);
+    }
+
+    .button.secondary {
+      color: #f5ead0;
+      background: transparent;
+      border: 1px solid rgba(212, 168, 72, 0.6);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+      text-align: left;
+    }
+
+    .feature {
+      padding: 20px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .feature h3 {
+      margin: 0 0 8px;
+      color: #f7d27a;
+    }
+
+    .feature p {
+      margin: 0;
+      color: #cfc6d8;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 42px;
+      color: #8e8499;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 
-<body style="
-background:#111;
-color:white;
-font-family:Arial;
-text-align:center;
-padding-top:100px;
-">
+<body>
+  <main class="page">
+    <div class="crest">✦</div>
 
-<h1>Dropfist Games</h1>
+    <h1>Dropfist Games</h1>
+    <p class="tagline">Crafting tools for tabletop adventurers.</p>
 
-<p>Crafting tools for tabletop adventurers.</p>
+    <section class="card">
+      <h2>Resolve</h2>
 
-<h2>Resolve</h2>
+      <p class="subtitle">
+        A fantasy-themed life counter app for Magic: The Gathering players,
+        built for clean table play, immersive visuals, and quick access to the
+        counters that matter most.
+      </p>
 
-<p>A fantasy-themed life counter for Magic: The Gathering.</p>
+      <div class="buttons">
+        <a class="button" href="#">Coming Soon on Google Play</a>
+        <a class="button secondary" href="https://ko-fi.com/YOUR-KOFI-NAME">Support Development</a>
+      </div>
 
-<p>
-Website under construction...
-</p>
+      <div class="features">
+        <div class="feature">
+          <h3>Life Tracking</h3>
+          <p>Fast, readable life totals designed for head-to-head tabletop play.</p>
+        </div>
 
+        <div class="feature">
+          <h3>Commander Ready</h3>
+          <p>Built with Commander damage, poison, mana, and extra counters in mind.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Fantasy Interface</h3>
+          <p>A darker, more atmospheric alternative to plain utility-style apps.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Free to Use</h3>
+          <p>Resolve is planned as a free app, with optional support for future updates.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © Dropfist Games · Resolve is an unofficial fan-made utility and is not affiliated with Wizards of the Coast.
+    </footer>
+  </main>
 </body>
 </html>
