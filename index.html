@@ -3,183 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dropfist Games | Resolve</title>
-
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at top, rgba(155, 92, 255, 0.22), transparent 35%),
-        radial-gradient(circle at bottom, rgba(212, 168, 72, 0.16), transparent 35%),
-        #08070b;
-      color: #f5ead0;
-      font-family: Georgia, "Times New Roman", serif;
-    }
-
-    .page {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 48px 24px;
-      text-align: center;
-    }
-
-    .crest {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto 24px;
-      border: 2px solid #d4a848;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      box-shadow: 0 0 35px rgba(212, 168, 72, 0.35);
-      background: radial-gradient(circle, #241733, #0d0a12);
-      font-size: 42px;
-    }
-
-    h1 {
-      font-size: clamp(3rem, 8vw, 6rem);
-      margin: 0;
-      letter-spacing: 4px;
-      color: #f7d27a;
-      text-shadow: 0 0 18px rgba(212, 168, 72, 0.4);
-    }
-
-    .tagline {
-      font-size: 1.25rem;
-      color: #cdbfdd;
-      margin: 12px 0 48px;
-    }
-
-    .card {
-      border: 1px solid rgba(212, 168, 72, 0.45);
-      border-radius: 24px;
-      padding: 36px;
-      background: rgba(12, 9, 18, 0.82);
-      box-shadow: 0 0 50px rgba(0, 0, 0, 0.55);
-    }
-
-    h2 {
-      font-size: 2.5rem;
-      margin: 0 0 12px;
-      color: #ffffff;
-    }
-
-    .subtitle {
-      font-size: 1.15rem;
-      line-height: 1.7;
-      color: #d9cfbf;
-      max-width: 760px;
-      margin: 0 auto 32px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 32px 0;
-    }
-
-    .button {
-      padding: 14px 24px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #0b0810;
-      background: linear-gradient(135deg, #f7d27a, #b9822f);
-      box-shadow: 0 0 20px rgba(212, 168, 72, 0.25);
-    }
-
-    .button.secondary {
-      color: #f5ead0;
-      background: transparent;
-      border: 1px solid rgba(212, 168, 72, 0.6);
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-      margin-top: 34px;
-      text-align: left;
-    }
-
-    .feature {
-      padding: 20px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.045);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .feature h3 {
-      margin: 0 0 8px;
-      color: #f7d27a;
-    }
-
-    .feature p {
-      margin: 0;
-      color: #cfc6d8;
-      line-height: 1.5;
-    }
-
-    footer {
-      margin-top: 42px;
-      color: #8e8499;
-      font-size: 0.95rem;
-    }
-  </style>
+  <title>Dropfist Games | Project Hub</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <main class="page">
-    <div class="crest">✦</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Dropfist Games home">
+      <span class="brand-mark">DF</span>
+      <span class="brand-name">Dropfist Games</span>
+    </a>
 
-    <h1>Dropfist Games</h1>
-    <p class="tagline">Crafting tools for all your gaming adventurers.</p>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#updates">Updates</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
 
-    <section class="card">
-      <h2>Resolve</h2>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Game tools, experiments, and releases</p>
+        <h1>DROPFIST GAMES</h1>
+        <p class="tagline">
+          A home for tabletop utilities, digital game prototypes, downloadable builds,
+          and project updates from Dropfist Games.
+        </p>
 
-      <p class="subtitle">
-        A fantasy-themed life counter app for Magic: The Gathering players,
-        built for clean table play, immersive visuals, and quick access to the
-        counters that matter most.
-      </p>
-
-      <div class="buttons">
-        <a class="button" href="#">Coming Soon on Google Play</a>
-        <a class="button secondary" href="https://ko-fi.com/YOUR-KOFI-NAME">Support Development</a>
-      </div>
-
-      <div class="features">
-        <div class="feature">
-          <h3>Life Tracking</h3>
-          <p>Fast, readable life totals designed for head-to-head tabletop play.</p>
-        </div>
-
-        <div class="feature">
-          <h3>Commander Ready</h3>
-          <p>Built with Commander damage, poison, mana, and extra counters in mind.</p>
-        </div>
-
-        <div class="feature">
-          <h3>Fantasy Interface</h3>
-          <p>A darker, more atmospheric alternative to plain utility-style apps.</p>
-        </div>
-
-        <div class="feature">
-          <h3>Free to Use</h3>
-          <p>Resolve is planned as a free app, with optional support for future updates.</p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button" href="#projects">Browse Projects</a>
+          <a class="button secondary" href="#updates">Latest Updates</a>
         </div>
       </div>
     </section>
 
-    <footer>
-      © Dropfist Games · Resolve is an unofficial fan-made utility and is not affiliated with Wizards of the Coast.
-    </footer>
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Project Library</p>
+        <h2>Featured Projects</h2>
+        <p>
+          Use these project panels as templates for future game pages, downloads,
+          dev logs, and platform links.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card resolve">
+          <div class="project-topline">
+            <span class="project-type">Mobile Utility</span>
+            <span class="status-badge">In Development</span>
+          </div>
+          <h3>Resolve: MTG Life Counter</h3>
+          <p>
+            A fantasy-themed life counter app for Magic: The Gathering players,
+            built for clean table play and quick access to the counters that matter.
+          </p>
+          <div class="project-links" aria-label="Resolve links">
+            <a href="#">Google Play</a>
+            <a href="#">Dev Log</a>
+            <a href="#">Support</a>
+          </div>
+        </article>
+
+        <article class="project-card flippin-hex">
+          <div class="project-topline">
+            <span class="project-type">Puzzle Game</span>
+            <span class="status-badge">Prototype</span>
+          </div>
+          <h3>Flippin Hex</h3>
+          <p>
+            A placeholder project page for a future hex-based game. Add screenshots,
+            browser builds, download links, patch notes, and release information here.
+          </p>
+          <div class="project-links" aria-label="Flippin Hex links">
+            <a href="#">Play Demo</a>
+            <a href="#">Download</a>
+            <a href="#">Updates</a>
+          </div>
+        </article>
+
+        <article class="project-card divine-legends">
+          <div class="project-topline">
+            <span class="project-type">Fantasy Project</span>
+            <span class="status-badge">Concept</span>
+          </div>
+          <h3>Divine Legends</h3>
+          <p>
+            A template space for a larger fantasy project. This can become a landing
+            page for lore, releases, character reveals, media, and downloadable files.
+          </p>
+          <div class="project-links" aria-label="Divine Legends links">
+            <a href="#">Project Page</a>
+            <a href="#">Media Kit</a>
+            <a href="#">Roadmap</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="updates" class="section update-section">
+      <div class="section-heading">
+        <p class="eyebrow">Development Feed</p>
+        <h2>Latest Updates</h2>
+      </div>
+
+      <div class="update-list">
+        <article class="update-item">
+          <span class="update-date">June 2026</span>
+          <div>
+            <h3>Dropfist Games hub started</h3>
+            <p>
+              The site is being shaped into a central place for project links,
+              downloads, and future release notes.
+            </p>
+          </div>
+        </article>
+
+        <article class="update-item">
+          <span class="update-date">Coming Soon</span>
+          <div>
+            <h3>Project pages and downloads</h3>
+            <p>
+              Each project can link to app stores, itch.io, direct files, browser
+              demos, changelogs, or support pages.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="support" class="section support-section">
+      <div>
+        <p class="eyebrow">Support</p>
+        <h2>Support Development</h2>
+        <p>
+          Add your Ko-fi, Patreon, store, Discord, or contact link here when you are
+          ready to connect the site to the wider Dropfist Games world.
+        </p>
+      </div>
+
+      <a class="button" href="https://ko-fi.com/YOUR-KOFI-NAME">Ko-fi Placeholder</a>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>&copy; Dropfist Games. Resolve is an unofficial fan-made utility and is not affiliated with Wizards of the Coast.</p>
+  </footer>
 </body>
 </html>
