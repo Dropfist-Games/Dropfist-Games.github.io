@@ -15,6 +15,7 @@
 
     <nav class="site-nav" aria-label="Main navigation">
       <a href="#projects">Projects</a>
+      <a href="#downloads">Downloads</a>
       <a href="#updates">Updates</a>
       <a href="#support">Support</a>
     </nav>
@@ -22,38 +23,72 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Game tools, experiments, and releases</p>
-        <img class="hero-logo" src="assets/dropfist-games-logo.svg" alt="Dropfist Games" />
-        <p class="tagline">
-          A home for tabletop utilities, digital game prototypes, downloadable builds,
-          and project updates from Dropfist Games.
-        </p>
+      <div class="hex-field" aria-hidden="true"></div>
 
-        <div class="hero-actions" aria-label="Primary actions">
-          <a class="button" href="#projects">Browse Projects</a>
-          <a class="button secondary" href="#updates">Latest Updates</a>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Game tools, prototypes, and releases</p>
+          <img class="hero-logo" src="assets/dropfist-games-logo.svg" alt="Dropfist Games" />
+          <p class="tagline">
+            A dark little command centre for Dropfist projects, downloadable builds,
+            dev logs, and tabletop tools.
+          </p>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button" href="#projects">Explore Projects</a>
+            <a class="button secondary" href="#downloads">Get Builds</a>
+          </div>
         </div>
+
+        <aside class="hero-panel" aria-label="Dropfist status">
+          <div class="panel-topline">
+            <span>Hub Status</span>
+            <span>Online</span>
+          </div>
+          <div class="hex-emblem" aria-hidden="true">
+            <span>DF</span>
+          </div>
+          <dl class="status-list">
+            <div>
+              <dt>Projects</dt>
+              <dd>03</dd>
+            </div>
+            <div>
+              <dt>Builds</dt>
+              <dd>Soon</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Tools</dd>
+            </div>
+          </dl>
+        </aside>
       </div>
+    </section>
+
+    <section class="ticker" aria-label="Dropfist highlights">
+      <span>Tabletop utilities</span>
+      <span>Hex-grid experiments</span>
+      <span>Fantasy systems</span>
+      <span>Direct downloads</span>
     </section>
 
     <section id="projects" class="section">
       <div class="section-heading">
         <p class="eyebrow">Project Library</p>
-        <h2>Featured Projects</h2>
+        <h1>Featured Projects</h1>
         <p>
-          Use these project panels as templates for future game pages, downloads,
-          dev logs, and platform links.
+          Three project slots are mocked up below as launch panels. Each can later
+          become its own page with builds, patch notes, screenshots, and support links.
         </p>
       </div>
 
       <div class="project-grid">
         <article class="project-card resolve">
-          <div class="project-topline">
-            <span class="project-type">Mobile Utility</span>
-            <span class="status-badge">In Development</span>
-          </div>
-          <h3>Resolve: MTG Life Counter</h3>
+          <span class="project-code">01</span>
+          <div class="project-icon" aria-hidden="true"></div>
+          <p class="project-type">Mobile Utility</p>
+          <h2>Resolve: MTG Life Counter</h2>
           <p>
             A fantasy-themed life counter app for Magic: The Gathering players,
             built for clean table play and quick access to the counters that matter.
@@ -66,14 +101,13 @@
         </article>
 
         <article class="project-card flippin-hex">
-          <div class="project-topline">
-            <span class="project-type">Puzzle Game</span>
-            <span class="status-badge">Prototype</span>
-          </div>
-          <h3>Flippin Hex</h3>
+          <span class="project-code">02</span>
+          <div class="project-icon" aria-hidden="true"></div>
+          <p class="project-type">Puzzle Prototype</p>
+          <h2>Flippin Hex</h2>
           <p>
-            A placeholder project page for a future hex-based game. Add screenshots,
-            browser builds, download links, patch notes, and release information here.
+            A placeholder slot for a future hex-based project, ready for browser
+            demos, download links, patch notes, and release information.
           </p>
           <div class="project-links" aria-label="Flippin Hex links">
             <a href="#">Play Demo</a>
@@ -83,14 +117,13 @@
         </article>
 
         <article class="project-card divine-legends">
-          <div class="project-topline">
-            <span class="project-type">Fantasy Project</span>
-            <span class="status-badge">Concept</span>
-          </div>
-          <h3>Divine Legends</h3>
+          <span class="project-code">03</span>
+          <div class="project-icon" aria-hidden="true"></div>
+          <p class="project-type">Fantasy Concept</p>
+          <h2>Divine Legends</h2>
           <p>
-            A template space for a larger fantasy project. This can become a landing
-            page for lore, releases, character reveals, media, and downloadable files.
+            A template space for a larger fantasy project, including lore,
+            character reveals, media, roadmap notes, and release files.
           </p>
           <div class="project-links" aria-label="Divine Legends links">
             <a href="#">Project Page</a>
@@ -101,17 +134,37 @@
       </div>
     </section>
 
-    <section id="updates" class="section update-section">
+    <section id="downloads" class="section feature-band">
+      <div class="feature-art" aria-hidden="true">
+        <div class="hex-stack">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="feature-copy">
+        <p class="eyebrow">Build Vault</p>
+        <h1>Downloads, Links, And Release Notes</h1>
+        <p>
+          This area can become the main update platform for your games: direct
+          download buttons, store links, version notes, and project-specific pages.
+        </p>
+        <a class="button" href="#updates">View Update Feed</a>
+      </div>
+    </section>
+
+    <section id="updates" class="section updates">
       <div class="section-heading">
         <p class="eyebrow">Development Feed</p>
-        <h2>Latest Updates</h2>
+        <h1>Latest Signals</h1>
       </div>
 
       <div class="update-list">
         <article class="update-item">
           <span class="update-date">June 2026</span>
           <div>
-            <h3>Dropfist Games hub started</h3>
+            <h2>Dropfist Games hub started</h2>
             <p>
               The site is being shaped into a central place for project links,
               downloads, and future release notes.
@@ -120,9 +173,9 @@
         </article>
 
         <article class="update-item">
-          <span class="update-date">Coming Soon</span>
+          <span class="update-date">Next Pass</span>
           <div>
-            <h3>Project pages and downloads</h3>
+            <h2>Project pages and downloadable builds</h2>
             <p>
               Each project can link to app stores, itch.io, direct files, browser
               demos, changelogs, or support pages.
@@ -135,7 +188,7 @@
     <section id="support" class="section support-section">
       <div>
         <p class="eyebrow">Support</p>
-        <h2>Support Development</h2>
+        <h1>Keep The Forge Lit</h1>
         <p>
           Add your Ko-fi, Patreon, store, Discord, or contact link here when you are
           ready to connect the site to the wider Dropfist Games world.
