@@ -62,7 +62,7 @@ a {
 
 .brand-logo {
   display: block;
-  width: clamp(148px, 18vw, 220px);
+  width: clamp(74px, 9vw, 110px);
   height: auto;
 }
 
@@ -116,6 +116,7 @@ p {
   display: block;
   width: min(100%, 760px);
   height: auto;
+  margin: 0 auto;
   filter: drop-shadow(0 0 30px rgba(243, 201, 105, 0.14));
 }
 
