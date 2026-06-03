@@ -32,7 +32,7 @@ body {
     radial-gradient(circle at 82% 8%, rgba(242, 193, 78, 0.12), transparent 24%),
     linear-gradient(180deg, #050507, var(--bg) 38%, #0b0911);
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Oxanium", "Segoe UI", sans-serif;
 }
 
 body::before {
@@ -73,6 +73,7 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 14px;
   min-width: 0;
   text-decoration: none;
 }
@@ -83,11 +84,42 @@ a {
   height: auto;
 }
 
+.brand-wordmark,
+.hero-wordmark {
+  display: grid;
+  gap: 2px;
+  justify-items: start;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.wordmark-primary {
+  color: #d9d9d9;
+  font-family: "Orbitron", "Arial Black", sans-serif;
+  font-size: clamp(1rem, 1.6vw, 1.45rem);
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-shadow:
+    0 1px 0 #ffffff,
+    0 -1px 0 #686868,
+    0 0 12px rgba(255, 255, 255, 0.16);
+}
+
+.wordmark-secondary {
+  color: var(--violet-2);
+  font-family: "Orbitron", "Arial Black", sans-serif;
+  font-size: clamp(0.64rem, 1.05vw, 0.95rem);
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  text-shadow: 0 0 12px rgba(122, 43, 239, 0.58);
+}
+
 .site-nav {
   display: flex;
   align-items: center;
   gap: clamp(12px, 3vw, 30px);
   color: var(--muted);
+  font-family: "Oxanium", "Segoe UI", sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
 }
@@ -167,6 +199,7 @@ a {
 .eyebrow {
   margin: 0 0 14px;
   color: var(--gold);
+  font-family: "Oxanium", "Segoe UI", sans-serif;
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -186,6 +219,21 @@ p {
   height: auto;
   margin: 0 auto;
   filter: drop-shadow(0 0 34px rgba(122, 43, 239, 0.2));
+}
+
+.hero-wordmark {
+  justify-items: center;
+  margin-top: clamp(16px, 3vw, 28px);
+}
+
+.hero-wordmark .wordmark-primary {
+  font-size: clamp(2rem, 6vw, 5.3rem);
+  letter-spacing: 0.13em;
+}
+
+.hero-wordmark .wordmark-secondary {
+  font-size: clamp(0.9rem, 2.5vw, 2.2rem);
+  letter-spacing: 0.42em;
 }
 
 .tagline {
@@ -216,6 +264,7 @@ p {
   background: linear-gradient(135deg, var(--gold), var(--gold-2));
   box-shadow: 0 0 28px rgba(242, 193, 78, 0.18);
   font-weight: 800;
+  font-family: "Oxanium", "Segoe UI", sans-serif;
   text-align: center;
   text-decoration: none;
   clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
@@ -246,6 +295,7 @@ p {
   color: var(--gold);
   font-size: 0.78rem;
   font-weight: 800;
+  font-family: "Oxanium", "Segoe UI", sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -329,6 +379,7 @@ p {
 .support-section h1 {
   margin: 0;
   color: #fff8eb;
+  font-family: "Orbitron", "Arial Black", sans-serif;
   font-size: clamp(2.45rem, 5vw, 4.6rem);
   line-height: 0.98;
   letter-spacing: 0;
@@ -421,6 +472,7 @@ p {
 .project-card h2 {
   margin: 0;
   color: #fff8eb;
+  font-family: "Orbitron", "Arial Black", sans-serif;
   font-size: 1.72rem;
   line-height: 1.08;
 }
@@ -545,6 +597,7 @@ p {
 .update-item h2 {
   margin: 0 0 6px;
   color: #fff8eb;
+  font-family: "Orbitron", "Arial Black", sans-serif;
   font-size: 1.22rem;
 }
 
@@ -606,6 +659,24 @@ p {
     justify-content: space-between;
     gap: 10px;
     font-size: 0.88rem;
+  }
+
+  .brand {
+    align-items: center;
+    width: 100%;
+  }
+
+  .brand-wordmark .wordmark-primary {
+    font-size: clamp(0.9rem, 5vw, 1.2rem);
+  }
+
+  .brand-wordmark .wordmark-secondary {
+    font-size: clamp(0.56rem, 3.2vw, 0.78rem);
+    letter-spacing: 0.2em;
+  }
+
+  .hero-wordmark .wordmark-secondary {
+    letter-spacing: 0.22em;
   }
 
   .hero {
