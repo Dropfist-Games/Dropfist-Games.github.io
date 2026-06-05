@@ -278,7 +278,7 @@ p {
 
 .feature-orb {
   position: absolute;
-  right: clamp(18px, 4.2vw, 44px);
+  right: clamp(30px, 5vw, 58px);
   top: 50%;
   z-index: 1;
   display: grid;
@@ -298,10 +298,10 @@ p {
 
 .feature-orb::before {
   position: absolute;
-  inset: -70px;
+  inset: -48px;
   z-index: -1;
   content: "";
-  background: radial-gradient(circle, rgba(123, 92, 255, 0.38), transparent 62%);
+  background: radial-gradient(circle, rgba(123, 92, 255, 0.34), transparent 64%);
   pointer-events: none;
 }
 
