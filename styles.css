@@ -874,20 +874,24 @@ p {
 }
 
 .footer-reveal {
+  --footer-offset: 0px;
   animation: footer-nav-up both;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
 
 .footer-reveal:nth-child(2) {
+  --footer-offset: 18px;
   animation-delay: 120ms;
 }
 
 .footer-reveal:nth-child(3) {
+  --footer-offset: 36px;
   animation-delay: 220ms;
 }
 
 .footer-reveal:nth-child(4) {
+  --footer-offset: 54px;
   animation-delay: 320ms;
 }
 
@@ -972,7 +976,7 @@ p {
 @keyframes footer-nav-up {
   from {
     opacity: 0;
-    transform: translateY(46px);
+    transform: translateY(calc(46px + var(--footer-offset)));
   }
 
   to {
