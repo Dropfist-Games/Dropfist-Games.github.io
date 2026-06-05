@@ -256,20 +256,11 @@ p {
 .window-header {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 18px;
-  border-bottom: 1px solid var(--line-soft);
-}
-
-.window-header span {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: rgba(234, 234, 234, 0.3);
+  justify-content: flex-end;
+  padding: 22px 26px 0;
 }
 
 .window-header strong {
-  margin-left: auto;
   color: var(--dim);
   font-size: 0.68rem;
   letter-spacing: 0.14em;
