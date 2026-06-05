@@ -676,8 +676,10 @@ p {
 
 .resource-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 14px;
+  width: min(100%, 980px);
+  margin: 0 auto;
 }
 
 .resource-card {
@@ -688,6 +690,10 @@ p {
   animation: panel-from-bottom both;
   animation-timeline: view();
   animation-range: entry 0% cover 34%;
+}
+
+.resource-card {
+  grid-column: span 2;
 }
 
 .resource-card.panel-left {
@@ -703,7 +709,7 @@ p {
 }
 
 .resource-card.wide {
-  grid-column: span 2;
+  grid-column: span 3;
   min-height: 250px;
 }
 
@@ -1017,6 +1023,10 @@ p {
   }
 
   .resource-card.wide {
+    grid-column: auto;
+  }
+
+  .resource-card {
     grid-column: auto;
   }
 
